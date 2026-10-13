@@ -10,7 +10,8 @@ body::before{content:"";position:absolute;inset:0 0 auto;height:760px;pointer-ev
 .brand-code .brand-bracket{color:#f59883}
 .nav .brand-code:hover{background:#253b42;border-color:var(--lime)}
 .nav .small-cta{background:var(--lime);color:#142b29!important}
-.contact-at{color:#9fbac5;font:500 14px 'DM Mono',monospace}
+.contact-at{display:none}
+.language{white-space:nowrap}
 .phone-link{display:inline-flex;align-items:center;gap:7px;color:var(--light)!important;text-decoration:none;font:500 11px 'DM Mono',monospace;white-space:nowrap}
 .phone-link:hover{color:#d7ff59!important}.phone-icon{font-family:Manrope;font-size:14px;color:#d7ff59}
 .hero h1 em,.proof-grid strong{color:#d7ff59}

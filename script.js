@@ -68,7 +68,7 @@ translations.fr.footerMail='Parlons-<em>en.</em> <span>↗</span>';
 translations.en.footerMail="Let’s talk<em>.</em> <span>↗</span>";
 let lang='en'; const button=document.querySelector('#language-toggle');
 function renderTechPills(){document.querySelectorAll('#stack .stack-list>div p').forEach(el=>{const items=el.textContent.split(' · ').map(item=>item.trim()).filter(Boolean);el.innerHTML=items.map(item=>`<span class="tech-pill">${item}</span>`).join('')})}
-function setLanguage(next){lang=next;document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>{el.innerHTML=translations[lang][el.dataset.i18n]||el.innerHTML});renderTechPills();button.textContent=lang==='fr'?'EN':'FR';button.setAttribute('aria-label',lang==='fr'?'Switch to English':'Passer en français');document.title=lang==='fr'?'Mohamed Amine Ben Belgacem — Ingénieur logiciel':'Mohamed Amine Ben Belgacem — Software Engineer';}
+function setLanguage(next){lang=next;document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>{el.innerHTML=translations[lang][el.dataset.i18n]||el.innerHTML});renderTechPills();button.textContent=lang==='fr'?'🇬🇧 EN':'🇫🇷 FR';button.setAttribute('aria-label',lang==='fr'?'Switch to English':'Switch to French');document.title=lang==='fr'?'Mohamed Amine Ben Belgacem — Ingénieur logiciel':'Mohamed Amine Ben Belgacem — Software Engineer';}
 button.addEventListener('click',()=>setLanguage(lang==='fr'?'en':'fr'));
 document.querySelector('#year').textContent=new Date().getFullYear();
 renderTechPills();

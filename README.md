@@ -12,18 +12,15 @@ python3 -m http.server 4173
 
 Open `http://localhost:4173`.
 
-## Publish cheaply / free
+## Deployment
 
-1. **GitHub Pages** — free for a public repository, simple for this static site. Upload the contents of this folder, then enable Pages from the repository settings.
-2. **Cloudflare Pages** — free tier, good global performance and custom-domain support. Connect a Git repository and set the build output folder to the repository root (no build command).
-3. **Netlify** — free tier, deploy by dragging this folder or connecting Git. No build command is needed.
+This repository is ready for GitHub Pages: it is a static site with no build command and the published files live at the repository root. Enable Pages in the repository settings with the `main` branch and `/ (root)` folder.
 
-## Image attribution and scope
-
-The Promovacances image is a public App Store screenshot supplied from its Apple App Store listing. The source links for Promovacances, FRAM, Carrefour and Amen Mobile are present in the site’s “Note sur les visuels” section. Product imagery is solely contextual; it does not claim ownership, endorsement, or authorship beyond the factual CV statements.
+The project links to the public App Store and Instagram references used in the case studies. The illustrations are contextual and do not claim ownership, endorsement, or authorship beyond the factual CV statements.
 
 ## Files
 
 - `index.html` — structure and bilingual copy hooks
 - `styles.css` — responsive presentation
+- `theme.css` — dark visual theme and accent overrides
 - `script.js` — FR/EN toggle, reveal effects and email-copy interaction

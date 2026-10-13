@@ -64,7 +64,9 @@ carrefourDetail1:'6 modules redesigned: search, ordering, history, account, loya
 carrefourDetail2:'Over 15 reusable UI components, reducing development time for new screens by 30%.',
 carrefourDetail3:'Reactive state management and Coordinator navigation; segmented push notifications for offers and order reminders.'
 });
-let lang='fr'; const button=document.querySelector('#language-toggle');
+translations.fr.footerMail='Parlons-<em>en.</em> <span>↗</span>';
+translations.en.footerMail="Let’s talk<em>.</em> <span>↗</span>";
+let lang='en'; const button=document.querySelector('#language-toggle');
 function renderTechPills(){document.querySelectorAll('#stack .stack-list>div p').forEach(el=>{const items=el.textContent.split(' · ').map(item=>item.trim()).filter(Boolean);el.innerHTML=items.map(item=>`<span class="tech-pill">${item}</span>`).join('')})}
 function setLanguage(next){lang=next;document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>{el.innerHTML=translations[lang][el.dataset.i18n]||el.innerHTML});renderTechPills();button.textContent=lang==='fr'?'EN':'FR';button.setAttribute('aria-label',lang==='fr'?'Switch to English':'Passer en français');document.title=lang==='fr'?'Mohamed Amine Ben Belgacem — Ingénieur logiciel':'Mohamed Amine Ben Belgacem — Software Engineer';}
 button.addEventListener('click',()=>setLanguage(lang==='fr'?'en':'fr'));
@@ -72,3 +74,4 @@ document.querySelector('#year').textContent=new Date().getFullYear();
 renderTechPills();
 document.querySelector('#copy-email').addEventListener('click',async()=>{try{await navigator.clipboard.writeText('benbelgacem.mohamed@live.com');const t=document.querySelector('#toast');t.textContent=translations[lang].copied;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2200)}catch{window.location.href='mailto:benbelgacem.mohamed@live.com'}});
 const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+setLanguage('en');

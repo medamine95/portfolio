@@ -36,6 +36,12 @@ translations.fr.chanelText='Application B2B de gestion de catalogue conçue pour
 translations.en.chanelText='A B2B catalog-management application built for about 200 collaborators across several countries.';
 translations.fr.catalogItems='références';
 translations.en.catalogItems='items';
+translations.fr.projectMobileLabel='Mobile';
+translations.fr.projectFrontendLabel='Front-end';
+translations.fr.projectBackendLabel='Back-end';
+translations.en.projectMobileLabel='Mobile';
+translations.en.projectFrontendLabel='Front-end';
+translations.en.projectBackendLabel='Back-end';
 Object.assign(translations.fr,{
 amenSummary:'Des services bancaires accessibles au quotidien, avec une attention portée à la fiabilité des parcours.',
 amenDetail1:'Authentification biométrique, solde en temps réel, virements SEPA et rechargement par carte.',

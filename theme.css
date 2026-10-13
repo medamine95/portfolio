@@ -10,6 +10,9 @@ body::before{content:"";position:absolute;inset:0 0 auto;height:760px;pointer-ev
 .brand-code .brand-bracket{color:#f59883}
 .nav .brand-code:hover{background:#253b42;border-color:var(--lime)}
 .nav .small-cta{background:var(--lime);color:#142b29!important}
+.contact-at{color:#9fbac5;font:500 14px 'DM Mono',monospace}
+.phone-link{display:inline-flex;align-items:center;gap:7px;color:var(--light)!important;text-decoration:none;font:500 11px 'DM Mono',monospace;white-space:nowrap}
+.phone-link:hover{color:#d7ff59!important}.phone-icon{font-family:Manrope;font-size:14px;color:#d7ff59}
 .hero h1 em,.proof-grid strong{color:#d7ff59}
 .hero h1 .family-name{display:block;margin-top:.25em;font-size:.43em;letter-spacing:-.065em;line-height:1.08;color:var(--light)}
 .hero-identity{display:flex;align-items:center;gap:clamp(24px,3vw,48px);min-width:0}
@@ -51,4 +54,4 @@ body::before{content:"";position:absolute;inset:0 0 auto;height:760px;pointer-ev
 .profile-portrait{align-self:center;justify-self:center;width:min(100%,210px)}
 .hero h1{font-size:clamp(64px,8.6vw,132px)}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{transition:none}.tech-pill{transition:none!important}}
-@media(max-width:760px){.hero-grid{grid-template-columns:1fr;gap:35px}.hero-identity{display:block}.profile-portrait{width:150px;justify-self:start;padding:6px;margin-top:0;margin-bottom:54px;box-shadow:6px 6px 0 rgba(215,255,89,.13)}.profile-tech-label{left:auto;right:6px;top:calc(100% + 10px);bottom:auto;min-width:112px;padding:7px 8px}.profile-tech-label span{font-size:7px}.profile-tech-label strong{font-size:10px}.hero-identity>div{min-width:0}.hero h1 .family-name{font-size:.39em}}
+@media(max-width:760px){.hero-grid{grid-template-columns:1fr;gap:35px}.hero-identity{display:block}.phone-link{font-size:0;gap:0}.phone-link .phone-icon{font-size:16px}.contact-at{font-size:12px}.profile-portrait{width:150px;justify-self:start;padding:6px;margin-top:0;margin-bottom:54px;box-shadow:6px 6px 0 rgba(215,255,89,.13)}.profile-tech-label{left:auto;right:6px;top:calc(100% + 10px);bottom:auto;min-width:112px;padding:7px 8px}.profile-tech-label span{font-size:7px}.profile-tech-label strong{font-size:10px}.hero-identity>div{min-width:0}.hero h1 .family-name{font-size:.39em}}
